@@ -2,6 +2,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
     }
 
     dependencies {
@@ -13,6 +14,7 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
     }
 }
 
@@ -50,7 +52,7 @@ android {
 dependencies {
     compileOnly fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
     implementation 'androidx.annotation:annotation:1.5.0'
-    implementation files('./libs/ffmpeg-kit-full-gpl-6.0-2.aar')
+    implementation('com.hughkaun:ffmpeg-kit-full-gpl:6.0-2')
     implementation files('./libs/smart-exception-java-0.2.1.jar')
     implementation files('./libs/smart-exception-common-0.2.1.jar')
 }

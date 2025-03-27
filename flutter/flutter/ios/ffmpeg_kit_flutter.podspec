@@ -119,10 +119,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'full-gpl' do |ss|
-    ss.source_files         = 'Classes/**/*'
-    ss.public_header_files  = 'Classes/**/*.h'
-    ss.dependency 'ffmpeg-kit-ios-full-gpl', "6.0"
-    ss.ios.deployment_target = '12.1'
+    ss.vendored_frameworks = 'Frameworks/ffmpeg-kit-ios-full-gpl/ffmpegkit.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavdevice.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavcodec.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavfilter.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavformat.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavutil.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libswresample.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libswscale.xcframework'
   end
 
   s.subspec 'full-gpl-lts' do |ss|
