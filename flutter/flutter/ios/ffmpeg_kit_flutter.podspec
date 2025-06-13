@@ -130,7 +130,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'ffmpeg_kit_ios_local' do |ss|
-     ss.vendored_frameworks = 'Frameworks/ffmpeg-kit-ios-full-gpl/ffmpegkit.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavdevice.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavcodec.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavfilter.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavformat.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavutil.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libswresample.xcframework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libswscale.xcframework'
+     ss.vendored_frameworks = 'Frameworks/ffmpeg-kit-ios-full-gpl/ffmpegkit.framework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavdevice.framework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavcodec.framework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavfilter.framework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavformat.framework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libavutil.framework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libswresample.framework', 'Frameworks/ffmpeg-kit-ios-full-gpl/libswscale.framework'
    end
 
 
